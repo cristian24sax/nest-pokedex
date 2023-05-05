@@ -28,8 +28,11 @@ export class PokemonService {
     }
   }
 
+  async inserSeed(createPokemonDto: CreatePokemonDto[]) {
+    return this.pokemonModel.insertMany(createPokemonDto);
+  }
   findAll() {
-    return `This action returns all pokemon`;
+    return this.pokemonModel.find()
   }
 
   async findOne(term: string) {

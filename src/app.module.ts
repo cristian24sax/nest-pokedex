@@ -17,5 +17,6 @@ import { SeedModule } from './seed/seed.module';
     SeedModule,
   ],
   
+  
 })
 export class AppModule {}
